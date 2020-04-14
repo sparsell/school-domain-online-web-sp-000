@@ -21,5 +21,4 @@ def initialize(name)
       grade.sort!
     end
   end
-
 end
