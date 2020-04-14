@@ -7,12 +7,9 @@ def initialize(name)
     @roster= {}
   end
 
-    #keys of grade levels. The value of each key will be an array of student names
-
   def add_student(name, grade)
     @roster[grade] ||= []
     @roster[grade] << name
-    @roster
   end
 
   def grade(grade)
@@ -20,8 +17,6 @@ def initialize(name)
   end
 
   def sort
-    # @roster.sort_by {|grade, name| [name, grade]}
-    # @roster.to_h
     @roster.each do |name, grade|
       grade.sort!
     end
