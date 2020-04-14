@@ -20,8 +20,11 @@ def initialize(name)
   end
 
   def sort
-    @roster.sort_by {|grade, name| [name, grade]}
-    @roster.to_h
+    # @roster.sort_by {|grade, name| [name, grade]}
+    # @roster.to_h
+    @roster.each do |key, value|
+      value.sort!
+    end
   end
 
 end
