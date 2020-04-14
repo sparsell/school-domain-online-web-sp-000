@@ -20,7 +20,7 @@ def initialize(name)
   end
 
   def sort
-    @roster.sort_by {|grade, name| [grade, name]}
+    @roster.sort_by {|grade, name| [name, grade]}
     @roster.to_h
   end
 
