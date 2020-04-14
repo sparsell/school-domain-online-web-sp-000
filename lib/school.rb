@@ -2,26 +2,29 @@
 class School
   attr_accessor :name, :roster
 
-#keys of grade levels. The value of each key will be an array of student names
-
-
-  def initialize(name)
+def initialize(name)
     @name=name
-    @roster = {}
+    @roster= {}
   end
+ 
+    #keys of grade levels. The value of each key will be an array of student names
 
   def add_student(name, grade)
     roster[grade] = []
     roster[grade] << name
-
+    roster
   end
 
   def grade(grade)
-    return roster[grade].values
+    return @roster.values
   end
+    #return array of all students in that grade
 
+
+    
   def sort(grade)
     return roster[grade].sort
   end
+  #sorted list of all the students where the strings in the student arrays are sorted alphabetically --> use .min
 
 end
