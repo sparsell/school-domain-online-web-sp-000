@@ -16,7 +16,7 @@ def initialize(name)
   end
 
   def grade(grade)
-    return @roster.values
+    @roster[grade]
   end
     #return array of all students in that grade
 
