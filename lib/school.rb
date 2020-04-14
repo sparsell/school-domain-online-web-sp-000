@@ -18,9 +18,6 @@ def initialize(name)
   def grade(grade)
     @roster[grade]
   end
-    #return array of all students in that grade
-
-
 
   def sort
     @roster.sort_by {|grade, name| [grade, name]}
