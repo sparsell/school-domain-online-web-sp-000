@@ -22,7 +22,6 @@ def initialize(name)
   def sort
     @roster.sort_by {|grade, name| [grade, name]}
     @roster.to_h
-    end
   end
 
 end
