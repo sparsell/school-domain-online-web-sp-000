@@ -6,7 +6,7 @@ def initialize(name)
     @name=name
     @roster= {}
   end
- 
+
     #keys of grade levels. The value of each key will be an array of student names
 
   def add_student(name, grade)
@@ -21,7 +21,7 @@ def initialize(name)
     #return array of all students in that grade
 
 
-    
+
   def sort(grade)
     return roster[grade].sort
   end
