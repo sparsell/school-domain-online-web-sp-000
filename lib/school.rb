@@ -24,7 +24,7 @@ def initialize(name)
 
   def sort
     #@roster.sort.to_h
-    @roster.sort_by {|grade, name| grade, name}
+    @roster.sort_by {|grade, name| [grade, name]}
 
   end
   #sorted list of all the students where the strings in the student arrays are sorted alphabetically --> use .sort
